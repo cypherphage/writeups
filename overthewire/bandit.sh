@@ -40,6 +40,39 @@ exit
 
 ssh bandit6@banit.labs.overthewire.org -p 2220
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+cd ..
+cd ..
+find . -type f -user bandit7 -group bandit6 -size 33c 2>&1 | grep -v "Permission denied" | grep -v "No such file" | xargs cat
+exit
+
+ssh bandit7@banit.labs.overthewire.org -p 2220
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+grep "millionth" data.txt | awk '{print $2}'
+exit
+
+ssh bandit8@banit.labs.overthewire.org -p 2220
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+sort data.txt | uniq -u
+exit
+
+ssh bandit9@banit.labs.overthewire.org -p 2220
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+strings data.txt | grep "[A-Za-z0-9]\{32\}$" | awk '{print $2}'
+exit
+
+ssh bandit10@banit.labs.overthewire.org -p 2220
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+base64 -d data.txt | awk '{print $4}'
+exit
+
+ssh bandit11@banit.labs.overthewire.org -p 2220
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' | awk '{print $4}'
+exit
+
+ssh bandit11@banit.labs.overthewire.org -p 2220
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
 
 
 
