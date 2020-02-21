@@ -73,12 +73,42 @@ exit
 ssh bandit12@bandit.labs.overthewire.org -p 2220
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 check file type
-xxd -r filename
+xxd -r file
 rename
-decompress using tar, gzip, bzip2
+decompress using tar , gzip, bzip2
+exit
 
 ssh bandit13@bandit.labs.overthewire.org -p 2220
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+ssh -i sshkey.private bandit14@localhost
+cat /etc/bandit_pass/bandit14
+exit
 
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+telnet localhost 30000
+exit
+
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+openssl s_client -connect localhost:30001
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+exit
+
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+cluFn7wTiGryunymYOu4RcffSxQluehd
+openssl s_client -connect localhost:31790
+ssh -i privatekey bandit17@bandit.labs.overthewire.org -p 2220
+diff passwords.old passwords.new
+exit
+
+ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+cat readme
+exit
+
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 
 
 
