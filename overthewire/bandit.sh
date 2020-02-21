@@ -77,6 +77,8 @@ xxd -r filename
 rename
 decompress using tar, gzip, bzip2
 
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+
 
 
 
